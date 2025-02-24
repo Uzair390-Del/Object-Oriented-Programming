@@ -18,7 +18,30 @@ Write a program that uses a **for loop** to find the sum of the first `N` natura
 ### **Task 5: Find the Largest Number (Using If-Else)**
 Write a program that takes three numbers as input and prints the **largest number** among them.
 
----
+### **Task 6:
+Write a C++ program that implements a **simple calculator** using **functions** and a **switch-case statement**. The calculator should perform the following operations:
+
+- **Addition (`+`)**
+- **Subtraction (`-`)**
+- **Multiplication (`*`)**
+- **Division (`/`)**
+
+## Requirements
+Your program should:
+
+1. Take two numbers as input from the user.
+2. Ask the user to choose an operation (`+`, `-`, `*`, `/`).
+3. Use a **switch-case** to handle the operation.
+4. Implement each operation inside a **separate function**.
+5. Display the result after performing the operation.
+6. Handle division by zero appropriately.
+
+## Expected Learning Outcomes
+By completing this task, students will:
+- Understand the use of **functions** in C++.
+- Learn how to use **switch-case** statements.
+- Gain experience in handling **user input** and **basic arithmetic operations**.
+- Implement **error handling** (e.g., division by zero).
 
 ## **2. Introduction to Object-Oriented Programming (OOP)**
 
