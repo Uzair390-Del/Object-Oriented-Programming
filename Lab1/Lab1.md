@@ -18,7 +18,7 @@ Write a program that uses a **for loop** to find the sum of the first `N` natura
 ### **Task 5: Find the Largest Number (Using If-Else)**
 Write a program that takes three numbers as input and prints the **largest number** among them.
 
-### **Task 6:
+### **Task 6:**
 Write a C++ program that implements a **simple calculator** using **functions** and a **switch-case statement**. The calculator should perform the following operations:
 
 - **Addition (`+`)**
