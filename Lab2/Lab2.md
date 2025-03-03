@@ -130,80 +130,21 @@ int main() {
 
 ---
 
-# **3. Dynamic Memory Allocation for Structures**  
-### **Why Use Dynamic Allocation for Structures?**  
-Dynamic memory allocation allows structures to be created at **runtime** using the `new` keyword. This is useful when the number of structure instances is unknown at compile time. Memory allocated dynamically must be **deallocated** using the `delete` keyword to prevent memory leaks.  
-
-**Advantages of Dynamic Structures:**  
-- Memory is allocated only when needed, reducing wastage.  
-- Useful for handling variable-sized data structures (e.g., dynamic arrays of structures).  
-- Enables more flexible and scalable programs. 
-
-### **Example 3: Creating Structure Dynamically**  
-
-```cpp
-#include <iostream>
-using namespace std;
-
-struct Student {
-    string name;
-    int age;
-    float gpa;
-};
-
-int main() {
-    Student* ptr = new Student;  // Allocating memory dynamically
-
-    // Assigning values using pointer
-    ptr->name = "David";
-    ptr->age = 22;
-    ptr->gpa = 3.7;
-
-    // Displaying values
-    cout << "Dynamically Allocated Student Details:" << endl;
-    cout << "Name: " << ptr->name << endl;
-    cout << "Age: " << ptr->age << endl;
-    cout << "GPA: " << ptr->gpa << endl;
-
-    delete ptr;  // Free memory
-    return 0;
-}
-```
-
-### **🔎 Step-by-Step Dry Run**  
-
-| **Step** | **Statement Executed** | **Memory State** |
-|---------|------------------|--------------|
-| 1 | `ptr = new Student;` | Memory allocated for `ptr` |
-| 2 | `ptr->name = "David";` | `ptr->name = "David"` |
-| 3 | `ptr->age = 22;` | `ptr->age = 22` |
-| 4 | `ptr->gpa = 3.7;` | `ptr->gpa = 3.7` |
-| 5 | `delete ptr;` | Memory freed |
-
----
 
 # **Lab Tasks**  
 ### ✅ **Task 1: Structure Basics**  
 - Create an `Employee` structure with `name`, `id`, and `salary`.  
 - Assign values and display them.  
+### ✅ **Task 2: Structure Basics**  
+- Create a `Book` structure with `title`, `author`, and `price`.  
+- Assign values and display them.  
 
 ### ✅ **Task 2: Pointer to Structure**  
-- Modify Task 1 to use **pointers**.  
-
-### ✅ **Task 3: Dynamic Structure Allocation**  
-- Allocate a `Car` structure dynamically and input values at runtime.  
-
-### ✅ **Task 4: Passing Structure by Pointer**  
-- Write a function to modify `Employee` details via **pointer**.  
-
-### ✅ **Task 5: Array of Structures with Pointers**  
-- Dynamically create an array of `Students`.  
+- Modify Task 1 and Task 2 to use **pointers**.  
 
 ---
 
 # **Conclusion**  
 🎯 **Key Takeaways:**  
 ✔ Structures **organize complex data** efficiently.  
-✔ Pointers **optimize memory usage**.  
-✔ Dynamic memory allocation **saves resources**.  
-✔ Passing structures by pointer **improves performance**.  
+✔ Pointers **optimize memory usage**.   
