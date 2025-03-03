@@ -1,5 +1,4 @@
-# Data Structure Lab Assignment 01
-
+# OOP Lab Assignment 01
 Dear Students,
 
 For your next lab, you are required to complete the following exercises related to C++ from the W3Schools website.
