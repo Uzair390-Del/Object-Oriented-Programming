@@ -13,6 +13,10 @@ Best of luck!
 
 *Submission Deadline:* Next lab session
 
+*Submission Link:* 
+*Section A* (https://docs.google.com/forms/d/e/1FAIpQLScrudTKybCi4JVuZKoEv8rmGrIurZvy4bZJyH4VZ7hL6ZeHeg/viewform?usp=sharing)
+*Section B* (https://docs.google.com/forms/d/e/1FAIpQLSducbXJU_gdeZRa77oSqE04JCmSBNYuSbrEPWES21WlEnmHHg/viewform?usp=sharing)
+
 Regards,  
 Lab Instructor
 Uzair Hassan
