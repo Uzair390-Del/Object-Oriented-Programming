@@ -179,6 +179,76 @@ int main() {
 | 4 | `ptr->gpa = 3.7;` | `ptr->gpa = 3.7` |
 | 5 | `delete ptr;` | Memory freed |
 
+# Passing Structures to Functions Using Pointers
+
+## Why Pass by Pointer?
+✔ **Efficient** (avoids copying large structures).
+✔ Allows **direct modification** of structure members inside a function.
+
+### Example: Function Modifying Structure
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Student {
+    string name;
+    int age;
+    float gpa;
+};
+
+void updateStudent(Student* s) {
+    s->age += 1;
+    s->gpa += 0.1;
+}
+
+int main() {
+    Student s1 = {"Emma", 19, 3.5};
+
+    cout << "Before Update: Age = " << s1.age << ", GPA = " << s1.gpa << endl;
+    updateStudent(&s1);
+    cout << "After Update: Age = " << s1.age << ", GPA = " << s1.gpa << endl;
+
+    return 0;
+}
+```
+
+---
+
+# Array of Structures Using Pointers
+
+## Why Use an Array of Structures?
+✔ **Efficiently store and manage multiple records**.
+✔ Allows handling of **large datasets dynamically**.
+
+### Example: Dynamically Allocated Array of Structures
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Student {
+    string name;
+    int age;
+    float gpa;
+};
+
+int main() {
+    int n = 2;
+    Student* students = new Student[n];
+
+    students[0] = {"Mike", 20, 3.2};
+    students[1] = {"Sarah", 21, 3.9};
+
+    for (int i = 0; i < n; i++) {
+        cout << "Student " << i + 1 << ": " << students[i].name 
+             << ", Age: " << students[i].age 
+             << ", GPA: " << students[i].gpa << endl;
+    }
+
+    delete[] students; // Free memory
+    return 0;
+}
+```
+
 
 # **Lab Tasks**  
 ### ✅ **Task 1: Structure Basics**  
