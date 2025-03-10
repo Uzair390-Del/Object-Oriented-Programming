@@ -192,6 +192,3 @@ public:
 
 ---  
 
-## **💡 Additional Resources:**  
-📌 Official C++ Documentation: [cplusplus.com](https://www.cplusplus.com/)  
-📌 OOP Concepts: [GeeksforGeeks](https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/)  
