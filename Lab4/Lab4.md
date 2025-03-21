@@ -144,7 +144,6 @@ int main() {
 Counter Example with Different Constructors
 This example demonstrates a counter that increases its value upon creation.
 
-```cpp
 ## **4. Counter Example with Different Constructors**
 This example demonstrates a counter that increases its value upon creation.
 
