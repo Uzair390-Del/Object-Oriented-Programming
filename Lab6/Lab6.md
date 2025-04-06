@@ -8,10 +8,63 @@ This lab will help you understand and implement:
 4. Arrays of objects
 
 ---
+### 🔹 Constant Member Functions
+- Declared using the `const` keyword after the function definition.
+- These functions **cannot modify any data members** of the class.
+- They are **read-only** functions and can only access constant data.
 
-## 1. Constant and Volatile Member Functions
+### 🔸 Syntax
+```cpp
+class A {
+    int x;
+public:
+    void show() const;  // This function cannot modify x
+};
+```
 
-### Concept Explanation
+### 🔸 Example
+```cpp
+#include <iostream>
+using namespace std;
+
+class Sample {
+    int value;
+public:
+    Sample(int v) { value = v; }
+
+    void show() const {
+        // value++;  ❌ Not allowed
+        cout << "Value is: " << value << endl;
+    }
+};
+
+int main() {
+    Sample s(10);
+    s.show();
+    return 0;
+}
+```
+
+### 🔸 Output
+```
+Value is: 10
+```
+
+---
+
+### 🔹 Volatile Keyword
+- Used for variables that **can be changed unexpectedly**, like **hardware registers** or **interrupts**.
+- Prevents the compiler from **optimizing** code that assumes the value remains unchanged.
+  
+### 🔸 Syntax
+```cpp
+volatile int temp;
+```
+
+> ⚠️ Note: `volatile` is mostly used in embedded systems programming.
+
+---
+
 - **const functions**: Member functions that promise not to modify the object's state
 - **volatile functions**: Member functions for objects that may change unexpectedly (e.g., hardware registers)
 - **mutable members**: Data members that can be modified even in const functions
