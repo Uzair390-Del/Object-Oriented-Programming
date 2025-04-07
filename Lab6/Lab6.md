@@ -1,4 +1,4 @@
-# Week 6: # OOP Lab - C++ -- Const/Volatile, Object Passing, and Arrays of Objects
+# Week 6: # OOP Lab - C++ -- Const, Object Passing, and Arrays of Objects
 
 ## Lab Objectives
 This lab will help you understand and implement:
