@@ -2,7 +2,7 @@
 
 ## Lab Objectives
 This lab will help you understand and implement:
-1. Constant and volatile member functions
+1. Constant  member functions
 2. Passing objects to functions
 3. Returning objects from functions
 4. Arrays of objects
@@ -52,21 +52,7 @@ Value is: 10
 
 ---
 
-### 🔹 Volatile Keyword
-- Used for variables that **can be changed unexpectedly**, like **hardware registers** or **interrupts**.
-- Prevents the compiler from **optimizing** code that assumes the value remains unchanged.
-  
-### 🔸 Syntax
-```cpp
-volatile int temp;
-```
-
-> ⚠️ Note: `volatile` is mostly used in embedded systems programming.
-
----
-
 - **const functions**: Member functions that promise not to modify the object's state
-- **volatile functions**: Member functions for objects that may change unexpectedly (e.g., hardware registers)
 - **mutable members**: Data members that can be modified even in const functions
 
 ### Example Code: Sensor Class
@@ -91,25 +77,18 @@ public:
         return value;
     }
     
-    // Volatile member function
-    void volatileUpdate() volatile {
-        value = rand() % 100;
-    }
 };
 
 int main() {
     Sensor normalSensor;
     const Sensor constSensor;
-    volatile Sensor volatileSensor;
     
     normalSensor.simulateReading();
     cout << "Normal sensor: " << normalSensor.getValue() << endl;
     
     // constSensor.simulateReading(); // Error - const object
     cout << "Const sensor: " << constSensor.getValue() << endl;
-    
-    volatileSensor.volatileUpdate();
-    // cout << volatileSensor.getValue(); // Needs const volatile version
+
     
     return 0;
 }
@@ -120,7 +99,6 @@ int main() {
 
 - `normalSensor`: Regular object
 - `constSensor`: Constant object (can't be modified)
-- `volatileSensor`: Volatile object (may change unexpectedly)
 
 **normalSensor Operations:**
 
@@ -132,14 +110,8 @@ int main() {
 - Can only call const member functions
 - `getValue()`: Returns 0 (default) and increments readCount to 1
 
-**volatileSensor Operations:**
-
-- `volatileUpdate()`: Changes value to new random number (e.g., 75)
-- Regular `getValue()` can't be called (needs volatile version)
-
 **Key Points**
 - Const objects can only call const member functions
-- Volatile objects need volatile member functions
 - Mutable members can be modified even in const functions
 
 ---
@@ -301,48 +273,6 @@ Name: Charlie, GPA: 3.9
 - Can initialize using constructors
 - Useful for managing collections of related objects
 
----
-
-## Lab Exercises
-
-### Exercise 1: Const/Volatile
-Create a `SecureData` class that:
-- Stores sensitive data (e.g., password)
-- Has constant methods for validation
-- Has volatile methods for secure wipe
-- Demonstrate usage with const and volatile objects
-
-**Sample Solution Approach:**
-- Create class with private string member for data
-- Implement `validate()` as const member function
-- Implement `secureWipe()` as volatile function
-- Demonstrate with const and volatile objects
-
-### Exercise 2: Object Passing
-Create a `ComplexNumber` class with:
-- Methods to add/subtract (passing objects by reference)
-- Method to multiply (returning new object)
-- Demonstrate all operations
-
-**Sample Solution Approach:**
-- Class with real and imaginary parts
-- `add()` and `subtract()` taking const references
-- `multiply()` returning new ComplexNumber
-- Show all operations in `main()`
-
-### Exercise 3: Array of Objects
-Create a `Book` class and:
-- Create array of 5 Book objects
-- Implement functions to:
-  - Find books by author
-  - Calculate average price
-  - Display all books sorted by price
-
-**Sample Solution Approach:**
-- Book class with title, author, price
-- Create and populate array
-- Write functions for required operations
-- Demonstrate all functionality
 
 ---
 
