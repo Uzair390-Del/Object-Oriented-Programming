@@ -4,7 +4,7 @@
 ## Lab Objectives
 This lab will help you understand and implement:
 1. operator overloading
-2. unary operator overloading** in C++.
+2. unary operator overloading in C++.
 
 
 ---
