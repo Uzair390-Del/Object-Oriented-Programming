@@ -10,18 +10,18 @@
 
 ---
 
-# 1. What is Inheritance? 🚀
+# 1. What is Inheritance? 
 
-Imagine you have a **parent** 👨‍👩 and a **child** 🧒.  
+Imagine you have a **parent**  and a **child** .  
 The child **inherits** (gets) some things from the parent, like **eyes**, **hair**, **height**!
 
 Similarly, in C++, **one class** (child class) can **inherit** features (data and functions) from **another class** (parent class).
 
-This helps to **reuse** code and **save time**! 🛠️
+This helps to **reuse** code and **save time**! 
 
 ---
 
-# 2. What is a Base Class and a Derived Class? 🏩➞️🏡
+# 2. What is a Base Class and a Derived Class? 
 
 - **Base Class**: The parent class. It has common features.
 - **Derived Class**: The child class. It inherits from the base class.
@@ -32,17 +32,17 @@ This helps to **reuse** code and **save time**! 🛠️
 
 ---
 
-# 3. What is Protected Access Specifier? 🔒
+# 3. What is Protected Access Specifier? 
 
 When we write **protected**, it means:
 - It is **private** to the outside world.
 - But the **derived class** (child) can still **use** it.
 
-Think of it like a **family secret** — outsiders can't know it, but family members do! 🤫
+Think of it like a **family secret** — outsiders can't know it, but family members do! 
 
 ---
 
-# 4. What is Public Inheritance? 📢➞️👨‍👧
+# 4. What is Public Inheritance? 
 
 When you use **public inheritance**, it means:
 - Whatever is **public** in the base class stays **public** in the child class.
@@ -58,7 +58,7 @@ class DerivedClass : public BaseClass
 
 ---
 
-# 5. Example Code 1: Basic Animal-Dog Inheritance 🤕
+# 5. Example Code 1:
 
 ```cpp
 #include<iostream>
@@ -107,7 +107,7 @@ Buddy says: Woof! Woof!
 
 ---
 
-# 6. Example Code 2: Vehicle-Car Inheritance 🚗
+# 6. Example Code 2: 
 
 ```cpp
 #include<iostream>
@@ -156,7 +156,7 @@ Driving a car with 4 wheels!
 
 ---
 
-# 7. Example Code 3: Person-Student Inheritance 👨‍🎓
+# 7. Example Code 3:
 
 ```cpp
 #include<iostream>
@@ -205,7 +205,7 @@ Alice is studying OOP.
 
 ---
 
-# 8. Example Code 4: Shape-Circle Inheritance ◯
+# 8. Example Code 4:
 
 ```cpp
 #include<iostream>
@@ -254,7 +254,7 @@ Drawing a Red circle.
 
 ---
 
-# 9. Example Code 5: Employee-Manager Inheritance (with Constructor) 💼
+# 9. Example Code 5: 
 
 ```cpp
 #include<iostream>
@@ -309,7 +309,7 @@ Manages a team of 5 members.
 
 ---
 
-# 10. Example Code 6: Appliance-WashingMachine Inheritance (with Constructor) 🧼
+# 10. Example Code 6: 
 
 ```cpp
 #include<iostream>
@@ -362,7 +362,7 @@ Capacity: 7 kg
 
 ---
 
-# 11. Important Points to Remember ✍️
+# 11. Important Points to Remember 
 
 - **Protected** members are **hidden** from the outside world but **accessible** in the child class.
 - **Public inheritance** keeps things public and protected as they are.
@@ -370,13 +370,12 @@ Capacity: 7 kg
 
 ---
 
-# 🌟 Your Tasks:
+#  Your Tasks:
 
 1. Create another class called **Cat** which inherits from **Animal**.
 2. Create a **Bike** class that inherits from **Vehicle** and shows its wheels.
 3. Create a **Teacher** class that inherits from **Person**.
 
-Have fun coding! 🚀
 
 ---
 
