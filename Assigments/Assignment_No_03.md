@@ -1,4 +1,4 @@
-# 📝 Assignment No 3 – OOP in C++
+# Assignment No 3 – OOP in C++
 
 **Course:** Object-Oriented Programming  
 **Topic Coverage:**
@@ -12,7 +12,7 @@
 
 ---
 
-## 📚 Objectives
+##  Objectives
 
 The goal of this assignment is to ensure students:
 
@@ -23,7 +23,7 @@ The goal of this assignment is to ensure students:
 
 ---
 
-## 🧠 What to Include in the Report
+##  What to Include in the Report
 
 ### Theory Section (Each topic should be 1–2 pages):
 
@@ -47,18 +47,18 @@ The goal of this assignment is to ensure students:
 
 ---
 
-## 💻 Implementation Requirements
+##  Implementation Requirements
 
 Write a C++ program that meets the following criteria:
 
 - Demonstrates the use of **static data members and static member functions** (e.g., a counter to count objects created).  
 - Includes at least one **friend function** accessing private data of two different classes.  
 
-> 💡 Make sure the program is clean, well-commented, and properly indented.
+>  Make sure the program is clean, well-commented, and properly indented.
 
 ---
 
-## 🎤 Viva Voce Guidelines
+##  Viva Voce Guidelines
 
 Each student must:
 
@@ -69,7 +69,7 @@ Each student must:
 
 ---
 
-## 📤 Submission Instructions
+##  Submission Instructions
 
 - Submit a **report** (in PDF or Word format).  
 - Submit **complete C++ source code** in a ZIP folder.  
