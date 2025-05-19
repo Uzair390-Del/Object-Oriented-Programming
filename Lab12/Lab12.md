@@ -1,7 +1,7 @@
 #  Lab: Understanding Polymorphism in C++ 
 ---
 
-## 🔹 1. What is Polymorphism?
+## 1. What is Polymorphism?
 
 ###  What?
 
@@ -76,7 +76,7 @@ int main() {
 
 ---
 
-## 🔹 3. Function Overriding (Runtime Polymorphism)
+##  3. Function Overriding (Runtime Polymorphism)
 
 ###  What?
 
@@ -164,7 +164,7 @@ int main() {
 
 ---
 
-## 🔹 4. Virtual Functions
+##  4. Virtual Functions
 
 ###  What?
 
@@ -215,7 +215,7 @@ int main() {
 
 ---
 
-## 🔹 5. Abstract Classes & Pure Virtual Functions
+##  5. Abstract Classes & Pure Virtual Functions
 
 ###  What?
 
@@ -392,7 +392,7 @@ int main() {
 
 ---
 
-## 🔹 Summary Table
+##  Summary Table
 
 | Topic                | What?                              | Why?                               | How?                                   |
 | -------------------- | ---------------------------------- | ---------------------------------- | -------------------------------------- |
